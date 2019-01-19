@@ -1,0 +1,7 @@
+.orderForm{
+    -fx-background-color:url("/lk/pos/fx/shop/asset/ordersearch.jpg");
+    -fx-background-size: cover;
+    -fx-border-radius: 5;
+    -fx-border-color: black;
+    -fx-boarder-width:0px 0px 10px 0px;
+}

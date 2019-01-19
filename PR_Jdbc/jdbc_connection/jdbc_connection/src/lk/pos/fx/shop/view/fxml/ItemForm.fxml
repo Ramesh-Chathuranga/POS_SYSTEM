@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="itemform" prefHeight="609.0" prefWidth="565.0" styleClass="itemForm" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.pos.fx.shop.controller.ItemFormController">
+   <children>
+      <Label layoutX="197.0" layoutY="20.0" prefHeight="32.0" prefWidth="210.0" text="Item Form" textFill="#326f36">
+         <font>
+            <Font name="Arial" size="26.0" />
+         </font>
+      </Label>
+      <VBox layoutX="103.0" layoutY="95.0" prefHeight="227.0" prefWidth="381.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="69.0" prefWidth="442.0">
+               <children>
+                  <JFXTextField fx:id="txtCode" focusColor="#275727" labelFloat="true" prefWidth="393.0" promptText="Code :" unFocusColor="#271680" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="57.0" prefWidth="381.0">
+               <children>
+                  <JFXTextField fx:id="txtDescription" focusColor="#275727" labelFloat="true" prefHeight="25.0" prefWidth="405.0" promptText="Description   :" unFocusColor="#271680" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="79.0" prefHeight="48.0" prefWidth="381.0">
+               <children>
+                  <JFXTextField fx:id="txtUnitPrice" focusColor="#275727" labelFloat="true" prefHeight="25.0" prefWidth="387.0" promptText="Unit Price :" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="136.0" prefHeight="48.0" prefWidth="381.0">
+               <children>
+                  <JFXTextField fx:id="txtQtyOnHand" focusColor="#275727" labelFloat="true" prefHeight="25.0" prefWidth="387.0" promptText="Qty On Hand:" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" layoutX="3.0" layoutY="347.0" prefHeight="227.0" prefWidth="558.0">
+         <children>
+            <TableView fx:id="tabItem" prefHeight="227.0" prefWidth="530.0">
+               <columns>
+                  <TableColumn prefWidth="103.0" text="code" />
+                  <TableColumn prefWidth="201.0" text="Description" />
+                  <TableColumn prefWidth="120.0" text="Unit Price" />
+                  <TableColumn prefWidth="105.0" text="Qty On Hand" />
+               </columns>
+            </TableView>
+         </children>
+      </HBox>
+      <AnchorPane fx:id="butSave" layoutX="484.0" layoutY="109.0" onMouseClicked="#saveAndUpdateItem_On_Click" onMouseEntered="#mouse_Entered_Animation" onMouseExited="#mouse_Exited_Animation" prefHeight="46.0" prefWidth="41.0">
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="4.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../asset/save.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="labSave" layoutX="8.0" layoutY="33.0" text="Save" textFill="#1e4d19" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="butDelete" layoutX="484.0" layoutY="182.0" onMouseClicked="#deleItem_On_Click" onMouseEntered="#mouse_Entered_Animation" onMouseExited="#mouse_Exited_Animation" prefHeight="46.0" prefWidth="41.0">
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="4.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../asset/delete.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="labDelete" layoutX="8.0" layoutY="30.0" text="Delete" textFill="#1e4d19" />
+         </children>
+      </AnchorPane>
+      <VBox layoutX="49.0" layoutY="95.0" prefHeight="237.0" prefWidth="49.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="69.0" prefWidth="442.0">
+               <children>
+                  <AnchorPane prefHeight="33.0" prefWidth="41.0">
+                     <children>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="5.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../asset/icons8_QR_Code_28px.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="57.0" prefWidth="381.0">
+               <children>
+                  <AnchorPane prefHeight="46.0" prefWidth="41.0">
+                     <children>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="5.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../asset/icons8_Label_28px.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="79.0" prefHeight="48.0" prefWidth="381.0">
+               <children>
+                  <AnchorPane prefHeight="46.0" prefWidth="41.0">
+                     <children>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="4.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../asset/icons8_Price_Tag_Pound_28px.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="136.0" prefHeight="48.0" prefWidth="381.0">
+               <children>
+                  <AnchorPane prefHeight="46.0" prefWidth="41.0">
+                     <children>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="4.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../asset/icons8_Add_Shopping_Cart_28px.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <AnchorPane fx:id="butNew" layoutX="445.0" layoutY="13.0" onMouseClicked="#createNewField" onMouseEntered="#mouse_Entered_Animation" onMouseExited="#mouse_Exited_Animation" prefHeight="32.0" prefWidth="81.0">
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="4.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../asset/add.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="labNew" layoutX="41.0" layoutY="6.0" text="New" textFill="#316f3f">
+               <font>
+                  <Font name="Arial Narrow Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="goHome" layoutX="12.0" layoutY="9.0" onMouseClicked="#navigator" onMouseEntered="#mouse_Entered_Animation" onMouseExited="#mouse_Exited_Animation" prefHeight="40.0" prefWidth="49.0">
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="4.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../asset/icons8_Home_48px.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="labHome" layoutX="1.0" layoutY="12.0" prefHeight="25.0" prefWidth="49.0" text="Home" textFill="#316f3f">
+               <font>
+                  <Font name="Arial Narrow Bold" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="48.0" fitWidth="50.0" layoutX="118.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../asset/icons8_Ingredients_28px.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="butReport" layoutX="494.0" layoutY="245.0" onMouseClicked="#createReport" onMouseEntered="#mouse_Entered_Animation" onMouseExited="#mouse_Exited_Animation" prefHeight="46.0" prefWidth="41.0">
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="4.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../asset/manage_paysheets.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="labReport" layoutX="8.0" layoutY="30.0" text="Report" textFill="#1e4d19" />
+         </children>
+      </AnchorPane>
+   </children>
+   <stylesheets>
+      <URL value="@../css/Customer_Style.css" />
+      <URL value="@../css/Item_Style.css" />
+   </stylesheets>
+</AnchorPane>

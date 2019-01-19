@@ -1,0 +1,20 @@
+.login{
+    -fx-background-image: url("/lk/pos/fx/shop/asset/login.jpg");
+    -fx-background-size: cover;
+    /*-fx-background-color: gray;*/
+    -fx-border-radius: 5;
+    -fx-border-color: black;
+    -fx-boarder-width:0px 0px 10px 0px;
+}
+
+.loginBut{
+    -fx-background-color: orange;
+    -fx-text-fill: black;
+}
+
+.textMaker{
+    -fx-border-color : black;
+    -fx-background-color :transparent;
+    -fx-text-fill :black;
+    -fx-border-color :0px 0px 2px 0px;
+}

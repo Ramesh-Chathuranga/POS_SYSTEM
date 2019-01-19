@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="SingUpPane" prefHeight="441.0" prefWidth="341.0" styleClass="login" stylesheets="@../css/LoginForm_Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.pos.fx.shop.controller.SingUpFormController">
+   <children>
+      <Label layoutX="90.0" layoutY="31.0" prefHeight="34.0" prefWidth="151.0" text=" Login Form" textFill="#202221">
+         <font>
+            <Font name="Arial Black" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="83.0" prefHeight="26.0" prefWidth="86.0" text="User name  :" />
+      <Label layoutX="59.0" layoutY="156.0" prefHeight="26.0" prefWidth="86.0" text="Password   :" />
+      <PasswordField fx:id="txtPassword" layoutX="70.0" layoutY="191.0" onKeyPressed="#requestFocustSet" prefHeight="25.0" prefWidth="236.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-radius: 2px; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill: black;" styleClass="textMaker" stylesheets="@../css/LoginForm_Style.css" />
+      <TextField fx:id="txtUserId" layoutX="66.0" layoutY="117.0" onKeyPressed="#requestFocustSet" prefHeight="27.0" prefWidth="244.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill: black;" styleClass="loginBut" stylesheets="@../css/LoginForm_Style.css" />
+      <Label layoutX="57.0" layoutY="375.0" prefHeight="27.0" prefWidth="244.0" text="Do you already have a user account?" textAlignment="CENTER" textFill="#e4e4eb">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="26.0" fitWidth="28.0" layoutX="31.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../asset/icons8_Access_25px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="28.0" layoutX="31.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../asset/icons8_Password_30px.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="loginPane" layoutX="113.0" layoutY="403.0" onMouseEntered="#butAnimationMouseEntered" onMouseExited="#butAnimationMouseExited" prefHeight="26.0" prefWidth="65.0">
+         <children>
+            <Label fx:id="butlogin" layoutY="-3.0" onMouseClicked="#onclick_To_Login" prefHeight="26.0" prefWidth="50.0" text="Login" textAlignment="CENTER" textFill="#e1e1e8">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="178.0" layoutY="403.0" prefHeight="27.0" prefWidth="75.0" text="from  here" textAlignment="CENTER" textFill="#c9c9d3">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="229.0" prefHeight="26.0" prefWidth="117.0" text="Re-enter_Password   :" />
+      <PasswordField fx:id="txtRepassword" layoutX="70.0" layoutY="264.0" onKeyPressed="#requestFocustSet" prefHeight="25.0" prefWidth="236.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-radius: 2px; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill: black;" styleClass="textMaker" stylesheets="@../css/LoginForm_Style.css" />
+      <ImageView fitHeight="26.0" fitWidth="28.0" layoutX="30.0" layoutY="265.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../asset/icons8_Password_30px.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="RegPane" layoutX="113.0" layoutY="317.0" onMouseEntered="#butAnimationMouseEntered" onMouseExited="#butAnimationMouseExited" prefHeight="26.0" prefWidth="90.0">
+         <children>
+            <JFXButton fx:id="butReg" layoutX="2.0" layoutY="1.0" onAction="#LoginTo_loginpage_OnAction" onKeyReleased="#LoginTo_LoginPage_Press" prefHeight="25.0" prefWidth="86.0" styleClass="loginBut" stylesheets="@../css/LoginForm_Style.css" text="Register" textAlignment="CENTER" textFill="#e4e0e0">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

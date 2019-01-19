@@ -1,0 +1,23 @@
+.orderForm{
+    -fx-background-image:url("/lk/pos/fx/shop/asset/order.jpg");
+    -fx-background-size: cover;
+    -fx-border-radius: 5;
+    -fx-border-color: black;
+    -fx-boarder-width:0px 0px 10px 0px;
+}
+
+.savebutton{
+    -fx-background-color: #172921;
+    -fx-text-fill:  #172921;
+    -fx-border-color: black;
+    -fx-border-width: 1px 1px 1px 1px;
+
+}
+
+.deletebuttton{
+    -fx-background-color: #E91E63;
+    -fx-text-fill: #E91E63;
+    -fx-border-color: black;
+    -fx-border-width: 1px 1px 2px 1px;
+
+}

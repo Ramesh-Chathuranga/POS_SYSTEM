@@ -1,0 +1,18 @@
+.singout{
+    -fx-background-color: transparent;
+    -fx-text-fill: #1c4508;
+    -fx-border-color: #1c4508;
+    -fx-border-width: 0px 0px 2px 0px;
+
+}
+
+.dashboard{
+     -fx-background-image: url("/lk/pos/fx/shop/asset/DashBoard.jpg");
+    -fx-background-size: cover;
+    -fx-border-radius: 5;
+    -fx-border-color: black;
+    -fx-boarder-width:0px 0px 10px 0px;
+}
+.subPane{
+ -fx-background-color: transparent;
+}

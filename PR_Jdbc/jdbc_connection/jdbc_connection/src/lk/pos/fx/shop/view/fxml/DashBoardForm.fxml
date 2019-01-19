@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dashboardForm" prefHeight="442.0" prefWidth="764.0" styleClass="dashboard" stylesheets="@../css/DashBoard_style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.pos.fx.shop.controller.DashBoardFormController">
+   <children>
+      <Label layoutX="257.0" layoutY="14.0" prefHeight="38.0" prefWidth="47.0" text="  HI" textFill="#286b38">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Pane layoutX="7.0" layoutY="76.0" prefHeight="235.0" prefWidth="750.0" styleClass="subPane" stylesheets="@../css/DashBoard_style.css">
+         <children>
+            <Pane fx:id="customerPane" layoutX="39.0" layoutY="55.0" onMouseClicked="#navigator" onMouseEntered="#mouseEnteredPaneAnimation" onMouseExited="#mouseExitedPaneAnimation" prefHeight="146.0" prefWidth="120.0">
+               <children>
+                  <ImageView fitHeight="120.0" fitWidth="143.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../asset/manage_employees_2x.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="labcustomer" layoutX="9.0" layoutY="120.0" prefHeight="17.0" prefWidth="103.0" styleClass="textlabel" stylesheets="@../css/DashBoard_style.css" text="Customer Page" textFill="#2c3c22">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="ItemPane" layoutX="220.0" layoutY="55.0" onMouseClicked="#navigator" onMouseEntered="#mouseEnteredPaneAnimation" onMouseExited="#mouseExitedPaneAnimation" prefHeight="146.0" prefWidth="129.0">
+               <children>
+                  <ImageView fitHeight="120.0" fitWidth="143.0" layoutX="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../asset/manage_paysheets_2x.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="labItem" layoutX="26.0" layoutY="120.0" prefHeight="17.0" prefWidth="103.0" styleClass="textlabel" stylesheets="@../css/DashBoard_style.css" text="Item Page" textFill="#2c3c22">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="OrderPane" layoutX="398.0" layoutY="55.0" onMouseClicked="#navigator" onMouseEntered="#mouseEnteredPaneAnimation" onMouseExited="#mouseExitedPaneAnimation" prefHeight="146.0" prefWidth="129.0">
+               <children>
+                  <ImageView fitHeight="120.0" fitWidth="143.0" layoutX="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../asset/create_paysheets_2x.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="labOrder" layoutX="14.0" layoutY="120.0" prefHeight="17.0" prefWidth="103.0" styleClass="textlabel" stylesheets="@../css/DashBoard_style.css" text="Place Order Page" textFill="#2c3c22">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="ODPane" layoutX="583.0" layoutY="51.0" onMouseClicked="#navigator" onMouseEntered="#mouseEnteredPaneAnimation" onMouseExited="#mouseExitedPaneAnimation" prefHeight="154.0" prefWidth="136.0">
+               <children>
+                  <ImageView fitHeight="120.0" fitWidth="143.0" layoutX="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../asset/reports_2x.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="labODView" layoutX="8.0" layoutY="120.0" prefHeight="19.0" prefWidth="120.0" styleClass="textlabel" stylesheets="@../css/DashBoard_style.css" text="View Orders  Page" textFill="#2c3c22">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Label fx:id="labUser" layoutX="322.0" layoutY="14.0" prefHeight="38.0" prefWidth="201.0" text="User Name" textFill="#204d20">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <HBox alignment="TOP_RIGHT" layoutX="654.0" layoutY="7.0" prefHeight="38.0" prefWidth="96.0">
+         <children>
+            <JFXButton fx:id="singOut" onAction="#User_singOut" onMouseEntered="#singOutMouseEntered" onMouseExited="#singOutMouseExited" opacity="0.66" prefHeight="25.0" prefWidth="77.0" styleClass="singout" stylesheets="@../css/DashBoard_style.css" text="Sing Out" />
+         </children>
+      </HBox>
+      <Label layoutX="280.0" layoutY="321.0" prefHeight="38.0" prefWidth="143.0" text="  WELCOME" textFill="#254d2f">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="138.0" layoutY="378.0" prefHeight="19.0" prefWidth="452.0" text="                                        COPYRIGHT   @ 2K18  Intellij IDEA  SHOP" textAlignment="CENTER" textFill="#254d2f">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</AnchorPane>
